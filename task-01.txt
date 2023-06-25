@@ -1,0 +1,32 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+Ans: HTTP1.1
+
+1. In HTTP/1.1, browsers establish multiple connections to fetch different assets of a webpage, which can lead to high overhead and slower loading times.
+2.HTTP/1.1 sends header information with each request and response, which can be redundant and lead to increased overhead.
+
+HTTP2.0
+1.One of the most significant improvements in HTTP/2 is multiplexing.
+2. HTTP/2 on the other hand, uses a single connection and multiplexes multiple requests and responses simultaneously. This reduces latency and allows for more efficient resource utilization.
+3.HTTP/2 addresses this issue by introducing header compression.
+
+Write a blog about objects and its internal representation in Javascript
+In JavaScript, objects play a central role and are fundamental to the language's versatility and flexibility. They allow developers to create complex data structures and define custom behaviors through properties and methods. Behind the scenes, JavaScript employs a unique internal representation for objects that facilitates their dynamic nature and dynamic manipulation. In this blog post, we will dive into the details of how objects are internally represented in JavaScript.
+
+
+Port:
+In computer networking, a port is a logical entity that enables communication between applications or services over a network. Ports are identified by numbers ranging from 0 to 65535.
+
+HTTP Methods:
+HTTP (Hypertext Transfer Protocol) is a protocol used for communication between web browsers and web servers. It defines a set of methods that specify the action to be performed on a resource. The commonly used HTTP methods are:
+
+GET: Retrieves a representation of a resource without modifying it. Used for retrieving web pages, images, and other content.
+
+POST: Submits data to be processed to a specified resource. Often used for submitting form data or uploading files.
+
+PUT: Replaces the entire representation of a resource with the provided data. It is used for updating existing resources.
+
+DELETE: Removes a specified resource.
+
+MAC Address:
+A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) by the manufacturer. It is a hardware address and is associated with the physical device, such as a network card or Wi-Fi adapter.
