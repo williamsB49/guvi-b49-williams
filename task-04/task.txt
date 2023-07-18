@@ -1,0 +1,94 @@
+Do the below programs in anonymous function & IIFE
+
+a. Print odd numbers in an array
+
+function check_value(value) { 
+  return value % 2 == 1 ? "even" : "odd"; 
+  };
+  
+  console.log(check_value(10));
+**************************************************************************************************************************
+b.  Convert all the strings to title caps in a string array
+
+
+function toTitleCase(str) {
+  return str.toLowerCase().split(' ').map(function (word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+}
+console.log(toTitleCase("welcome to guvi"));
+*******************************************************************************************************************************
+c.   Sum of all numbers in an array
+
+function sum(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total = total + arr[i];
+  }
+  return total;
+}
+
+const total1=sum([10, 10, 10, 10, 100]); 
+console.log(total1);
+
+***********************************************************************************************************************************
+d.  Return all the prime numbers in an array
+
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+
+  
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function getPrimeNumbers(array) {
+  return array.filter(isPrime);
+}
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const primes = getPrimeNumbers(numbers);
+console.log(primes);
+
+******************************************************************************************************************************
+e.  Return all the palindromes in an array
+
+function isPalindrome(str) {
+  
+  const alphanumericStr = str.toLowerCase();
+
+  
+  const reversedStr = alphanumericStr.split('').reverse().join('');
+
+  
+  return alphanumericStr === reversedStr;
+}
+
+
+
+
+
+const words = ["madam", "racecar", "hello", "level", "world"];
+const palindromes =words.filter(isPalindrome);
+console.log(palindromes);
+
+******************************************************************************************************************************
+f.  Remove duplicates from an array
+
+let chars = ['A', 'B', 'A', 'C', 'B'];
+
+let uniqueChars = chars.filter((c, index) => {
+    return chars.indexOf(c) === index;
+});
+
+console.log(uniqueChars);
+
+********************************************************************************************************************************
