@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            margin: 10px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        p{
+          /*  border: 1px solid black;
+            border-style: dashed;
+            margin-left: 50px;
+            padding: 20px;*/
+        }
+        a{
+            border: 1px solid black;
+            background-color: aqua;
+        }
+        img{
+            display: block;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">Hello can I Help you</div>
+    
+    
+    <Script>
+        const element = document.createElement("div");
+        element.setAttribute("id","divmain");
+        element.setAttribute("class","main");
+        element.innerText="what i do sir";
+
+        const what=document.getElementById("parent");
+        what.appendChild(element);
+
+        const element1=document.createElement("p")
+        
+        element1.setAttribute("id","pmain");
+        element1.setAttribute("class","main");
+        element1.innerText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam, a ipsam aspernatur minus saepe porro molestiae,";
+
+        const what1=document.getElementById("parent")
+        what1.appendChild(element1);
+         
+        const element2 = document.createElement("a");
+        element2.setAttribute("href","https://amityonline.com/");
+        element2.setAttribute("target","_blank");
+        element2.innerText="this is online class site";
+        
+
+        const what2=document.getElementById("parent");
+        what2.appendChild(element2);
+
+        const element3 = document.createElement("img",);
+        element3.setAttribute("src","images.jpeg");
+        element3.setAttribute("class","main");
+        element3.innerText="this is image";
+        
+
+        const what3=document.getElementById("parent");
+        what3.appendChild(element3);
+
+        const element4 = document.createElement("p");
+        element4.innerHTML=`<h1 style="color: blue;">this is image </h1>`
+
+        const what4 = document.getElementById("parent");
+        what4.appendChild(element4);
+
+
+
+    </Script>
+</body>
+</html>

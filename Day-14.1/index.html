@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="target">
+        <p id="class">Lorem, ipsum dolor sit amet consectetur adi
+            pisicing elit. Cumque, similique. Reprehenderit id itaque eos molestias odio sapiente ipsam perferendis, illum culpa nulla eum, a voluptatum nostrum, corrupti debitis dolore consectetur!</p>
+    </div>
+    <script>
+        const targetdiv=document.getElementById("target")
+        const event1 = document.getElementById("class")
+        
+        targetdiv.addEventListener("click",function (){
+            event1.innerText="clicked!!!!";
+            event1.style.backgroundColor="red"
+        });
+
+        targetdiv.addEventListener("mouseover",function (){
+            event1.innerText="mouse overed !!!";
+            event1.style.backgroundColor="green"
+        });
+
+        targetdiv.addEventListener("mouseout",function (){
+            event1.innerText="mouseouted !!!!";
+            event1.style.backgroundColor="white"
+        });
+
+        targetdiv.addEventListener("keydown",function (){
+            event1.innerText="keydowned !!!!";
+            event1.style.backgroundColor="aqua"
+        });
+    
+
+    </script>
+</body>
+</html>

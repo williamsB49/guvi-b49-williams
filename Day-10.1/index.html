@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding:10px;
+            
+            
+            border: 1px solid;
+            border-color: black;
+            background-color: brown;
+        }
+        .item{
+            border: 1px solid;
+            border-color: black;
+            background-color: aqua;
+            margin: 10px;
+         }
+         .flex-container{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+          /*  align-content:end;*/
+           justify-content: end;
+            padding:10px;
+            border: 1px solid;
+            border-color: black;
+            background-color: brown;
+        }
+        .flex-item{
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+            border: 1px solid;
+            border-color: black;
+            background-color: aqua;
+            margin: 10px;
+
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS OF GRID DEMO</h1>
+    <div class="container">
+        <div class="item">ITEM1</div>
+        <div class="item">ITEM2</div>
+        <div class="item">ITEM3</div>
+        <div class="item">ITEM4</div>
+        <div class="item">ITEM5</div>
+        <div class="item">ITEM6</div>
+    </div>
+    <h1> CSS OF FLEX DEMO</h1>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    <h2></h2>
+
+</body>
+</html>

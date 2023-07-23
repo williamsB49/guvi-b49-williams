@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .container-fluid{
+        width: 300px;
+        height: 200px;
+        border: 2px solid black;
+        margin-left: 500px;
+
+        padding: 20px;
+        background-color: aqua;
+        
+
+    }
+    .gate1{
+        padding: 20px;
+        color: ;
+    }
+    .result{
+        padding: 20px;
+        font-weight: bold;
+        
+    }
+    label{
+        font-weight: bold;
+    }
+    
+
+   </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="gate">
+        <label for="num1">Number 1:</label>
+        <input type="number" name="" id="num1">
+        <br>
+        <br>
+        <label for="num2">Number 2:</label>
+        <input type="number" name="" id="num2">
+        </div>
+        
+        <div id="gate1">
+            <button id="add">ADD</button>
+            <button id="sub">SUB</button>
+            <button id="mul">MUL</button>
+            <button id="div">DIV</button>
+            
+        </div>
+       
+         <div class="result">
+        RESULT:
+        <span id="result"></span>
+        </div>
+   </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

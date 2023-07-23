@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: blue;
+}
+label{
+    color: brown;
+
+}
+input{
+    color: white;
+    background-color: yellowgreen;
+}
