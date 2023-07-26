@@ -1,0 +1,21 @@
+.show{
+    color: gray;
+    font-size: 100px;
+    text-align: center;
+    animation-name: beat;
+    animation-duration: 1s;
+}
+@keyframes beat {
+    0% {
+      font-size: 70px;
+    }
+    50% {
+      font-size: 100px;
+    }
+    100%{
+        font-size: 70px;
+    }
+  }
+  .show{
+    animation-iteration-count: 11;
+  }
